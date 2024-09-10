@@ -406,9 +406,3 @@ table td {
         font-size: 10px;
     }
 }
-
-@media screen and (max-width: 767px) {
-    .to-do {
-        height: 100vh;
-    }
-}
