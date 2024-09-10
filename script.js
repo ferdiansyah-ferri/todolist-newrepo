@@ -247,4 +247,5 @@ logoutButton.addEventListener("click", () => {
     window.opener.close();
   }else {
     window.close();
+  }
 });
