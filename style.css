@@ -1,0 +1,406 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right, rgba(11, 7, 7, 0.3), rgba(8, 7, 7, 0.5)), url(img/bg.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+
+}
+
+.to-do {
+    display: flex;
+    flex-direction: column;
+    background-color: #90afc5;
+    padding: 1rem;
+    margin: 2rem auto;
+    border-radius: 0 5rem 0 5rem;
+    width: 40%;
+    padding: 3rem;
+    opacity: 0.8;
+    min-width: 250px;
+    border: 1px solid #ccc;
+    max-height: 100%;
+
+}
+
+
+#tolist {
+    color: #763626;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+#editProfile {
+    background-color: #336b87;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 0.5rem;
+    width: 10rem;
+    margin-bottom: 5px;
+}
+
+#deleteProfile {
+    background-color: #336b87;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 0.5rem;
+    width: 10rem;
+}
+
+.modal {
+    /* width: 100%; */
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 10px 10px 10px 0;
+}
+
+.modal-content {
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid #888;
+}
+
+#edp {
+    color: #2a3132;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#nma,
+#jbt {
+    color: #2a3132;
+    font-size: 1rem;
+
+}
+
+#save {
+    background-color: #336b87;
+    color: #fff;
+    border: none;
+    padding: 0.6rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+#save:hover {
+    background-color: #fff;
+    color: black;
+}
+
+#nama-tampil,
+#jabatan-tampil {
+
+    font-size: 1.2rem;
+}
+
+#profile-info {
+    margin-top: 1rem;
+}
+
+
+.awal #tanggalWaktu {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 0.7rem;
+    padding: 0.6rem;
+    background-color: rgb(255, 136, 0);
+    animation:
+        typewriter 5s steps(50) 1s 1 normal both,
+        blinkingCursor 500ms steps(50) infinite normal;
+    border-right: 1px solid rgba(255, 255, 255, .75);
+    text-align: center;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkingCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.container {
+    background-color: #ccc;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -1rem;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    color: #2a3132;
+}
+
+.container #taskInput {
+    background-color: #336b87;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    border: none;
+    margin-top: 0.5rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    list-style: none;
+
+}
+
+.container #taskInput:hover {
+    background-color: #fff;
+    color: black;
+    border: none;
+}
+
+.container #priority {
+    padding: 0.5rem;
+    color: #fff;
+    background-color: #336b87;
+    width: 100%;
+    margin-top: 0.5rem;
+    border-radius: 2rem;
+    text-align: center;
+
+
+}
+
+.container #submitBtn {
+    padding: 0.5rem;
+    color: #fff;
+    background-color: #336b87;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 0.6rem;
+    border-radius: 2rem;
+    border: none;
+
+}
+
+
+#submitBtn:hover {
+    background-color: red;
+    color: black;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+table {
+    width: 100%;
+    background-color: #ccc;
+    margin-top: 1rem;
+    border-collapse: collapse;
+
+
+}
+
+table tr {
+    background-color: #336b87;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+
+}
+
+table td {
+    background-color: #ccc;
+
+    border: 1px solid black;
+    color: black;
+
+}
+
+.todo {
+    font-size: 1.5rem;
+    color: #2a3132;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.done {
+    font-size: 1.5rem;
+    color: #2a3132;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+#btn-dlt {
+    display: block;
+    background-color: #763626;
+    color: #fff;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 0.7rem;
+    width: 100%;
+}
+
+#btn-dlt:hover {
+    background-color: red;
+    color: black;
+}
+
+.completed {
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+
+.profile {
+    text-align: center;
+}
+
+#deleteProfile {
+    font-size: 0.8rem;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#deleteProfile:hover {
+    background-color: #fff;
+    color: black;
+}
+
+#profileImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+}
+
+.error-profile {
+    color: red;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+#editProfile {
+    font-size: 0.8rem;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Gaya CSS untuk tgl */
+#tgl {
+
+    background-color: rgb(255, 136, 0);
+
+    font-size: 1rem;
+
+}
+
+
+
+
+#btn-log {
+    display: block;
+    width: 100%;
+    background-color: #763626;
+    color: #fff;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 0.7rem;
+}
+
+#btn-log:hover {
+    background-color: red;
+    color: black;
+}
+
+
+/*  Media Query */
+
+@media screen and (min-width: 360px) and (max-width: 1200px) {
+
+    #nma,
+    #jbt {
+
+        display: block;
+    }
+
+    #nama,
+    #jabatan {
+        width: 100%
+    }
+
+    body {
+        background: content-box;
+    }
+
+}
+
+
+@media screen and (min-width : 360px) and (max-width: 1200px) {
+
+    .to-do {
+        width: 100%;
+    }
+
+    .profile {
+        display: flex;
+    }
+
+    #editProfile {
+        height: 20px;
+        margin: 2px;
+        padding: 1px;
+        align-self: flex-end;
+        font-size: 12px;
+    }
+
+    #deleteProfile {
+        height: 20px;
+        padding: 1px;
+        font-size: 12px;
+        align-self: self-end;
+        margin-bottom: 3px;
+
+
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 550px) {
+    #tgl {
+        font-size: 10px;
+    }
+}
