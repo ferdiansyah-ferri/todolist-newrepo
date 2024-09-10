@@ -243,5 +243,9 @@ renderTasks();
 const logoutButton = document.getElementById("btn-log");
 
 logoutButton.addEventListener("click", () => {
-  window.close();
+  if (window.opener) {
+    window.opener.close();
+  } else {
+    window.close();
+  }
 });
