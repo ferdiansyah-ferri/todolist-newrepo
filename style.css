@@ -6,12 +6,10 @@
 body {
     background: linear-gradient(to right, rgba(11, 7, 7, 0.3), rgba(8, 7, 7, 0.5)), url(img/bg.jpg);
     width: 100%;
+    max-height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100vh;
-
-
 
 }
 
@@ -22,10 +20,10 @@ body {
     padding: 1rem;
     margin: 2rem auto;
     border-radius: 0 5rem 0 5rem;
-    width: 40%;
+    width: 50%;
     padding: 3rem;
     opacity: 0.8;
-    min-width: 250px;
+
     border: 1px solid #ccc;
     height: 100%;
 
@@ -352,57 +350,57 @@ table td {
 
 /*  Media Query */
 
-@media screen and (min-width: 360px) and (max-width: 1200px) {
-
-    #nma,
-    #jbt {
-
-        display: block;
-    }
-
-    #nama,
-    #jabatan {
-        width: 100%
-    }
-
-    body {
-        background: content-box;
-    }
-
-}
 
 
-@media screen and (min-width : 360px) and (max-width: 1200px) {
-
-    .to-do {
-        width: 100%;
-    }
-
-    .profile {
-        display: flex;
-    }
-
-    #editProfile {
-        height: 20px;
-        margin: 2px;
-        padding: 1px;
-        align-self: flex-end;
-        font-size: 12px;
-    }
-
-    #deleteProfile {
-        height: 20px;
-        padding: 1px;
-        font-size: 12px;
-        align-self: self-end;
-        margin-bottom: 3px;
-
-
-    }
-}
-
-@media screen and (min-width: 360px) and (max-width: 550px) {
+@media screen and (max-width: 550px) {
     #tgl {
-        font-size: 10px;
+        font-size: 0.7rem;
     }
+}
+
+@media screen and (max-width: 790px) {
+    .profile {
+        display: grid;
+        margin: 3px;
+        justify-content: center;
+    }
+
+    #profileImage {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .modal {
+        width: 100%;
+
+    }
+
+    input {
+        width: 90%;
+        margin-bottom: 3px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .to-do {
+        width: 70%;
+    }
+
+    #tanggalWaktu {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .to-do {
+        width: 65%;
+    }
+
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+    .to-do {
+        width: 90%;
+    }
+
 }
